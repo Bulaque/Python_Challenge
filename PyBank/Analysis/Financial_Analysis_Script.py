@@ -16,7 +16,7 @@ with open(budget_datacsv) as budget_sheet:
 print(budget_sheet)
 
 # Creating Net Total Amount line
-
+   
 # Creating Average Change line
 # Creating Greatest Increase in Profits line
 # Creating Greatest Decrease in Profits line
