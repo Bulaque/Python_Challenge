@@ -1,0 +1,26 @@
+import os
+import csv
+
+budget_datacsv = os.path.join("PyBank","Resources","budget_data.csv")
+
+# Creating PyBank Analysis Title
+print("Financial Analysis")
+print("----------------------------------")
+
+with open(budget_datacsv) as budget_sheet:
+    
+# Creating Total Months line
+    budgetdata_reader = csv.reader(budget_sheet)
+    heading = next(budgetdata_reader)
+
+    for row in budgetdata_reader:
+        if row == 2:
+            total_months = row[1]
+
+    print("Total Months: " + (len(total_months)))
+
+# Creating Net Total Amount line
+
+# Creating Average Change line
+# Creating Greatest Increase in Profits line
+# Creating Gretest Decrease in Profits line
