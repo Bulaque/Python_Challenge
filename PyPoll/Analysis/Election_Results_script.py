@@ -27,7 +27,8 @@ print("--------------------------------")
 # The percentage of votes each candidate won
 # The total number of votes each candidate won
 
-print(election_df("Candidate")["Ballot ID"].nunique())
+Full_amount_votes = election_df.groupby("Candidate")["Ballot ID"].nunique()
+
 # For Charles Casper Stockham, Diana DeGette and Raymon Anthony Doane
 
 # The winner of the election based on popular vote
